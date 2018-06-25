@@ -19,7 +19,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'The App'
+      title: 'The App',
+      myPageHeader: 'Hello World',
+      template: './src/index.html'
     }),
     new webpack.HashedModuleIdsPlugin()
   ],
